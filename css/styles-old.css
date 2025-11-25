@@ -56,7 +56,13 @@ gap: 40px;
 .navigation-logo {padding: 24px 0;
 margin-right: 76px;}
 
-.navigation .navigation-name {
+.navigation .navigation-name {font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #2e2f42;}
 
     .header-link {
@@ -88,7 +94,7 @@ margin-right: 76px;}
     background-color: #404bbf; 
 }
 
-.address {font-style: normal;
+address {font-style: normal;
 margin-left: auto;}
 
 .contact {display: flex;
