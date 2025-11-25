@@ -178,7 +178,6 @@ button {
                     .contact-link {
                         display: block;
                          font-style: normal;
-                         font-weight: 400;
                         font-size: 12px;
                         
                         line-height: 1.17;
@@ -322,4 +321,70 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .mobile-menu {
         display: none;
     }
+}
+
+/*main*/
+.main {
+    text-align: center;
+    padding: 72px 0;
+        background: #2e2f42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+
+.main-title {
+    text-align: center;
+    max-width: 216px;
+    margin: 0 auto;
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: #fff;
+}
+.main-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    background: #4d5ae5;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 72px auto;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-btn:hover {
+    background-color: #404BBF;
+}
+
+.main-btn:focus {
+    background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+            padding: 112px 0;
+            margin: 0 auto;
+    }      
+}
+
+.main-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+        font-size: 56px;
+}
+
+.main-btn {
+    margin-top: 36px;
+    margin-bottom: 112px;
 }
