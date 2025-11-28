@@ -42,16 +42,16 @@
             </ul>
         </address>
 
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
             <svg class="burger-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-burger"></use>
             </svg>
         </button>
         </div>
 
-        <div class="mobile-menu">
+        <div class="mobile-menu is-open" data-menu>
             <div class="container mobile-menu-container">
-                <button class="mobile-menu-close">
+                <button class="mobile-menu-close" data-menu-close>
                     <svg class="mobile-menu-svg" width="8" height="8">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
@@ -73,7 +73,7 @@
 <address class="mobile-menu-address">
     <ul class="mobile-menu-contact">
         <li>
-            <a class="mobile-menu-contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="mobile-menu-contact-link current" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
         <li>
             <a class="mobile-menu-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -118,7 +118,7 @@
             <div class="container main-container">
             <h1 class="main-title">Effective Solutions
                 for Your Business</h1>
-            <button type="button" class="main-btn">Order Service</button>
+            <button type="button" class="main-btn" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="points">
@@ -473,9 +473,9 @@
 </div>
  </footer>
 
-<div class="backdrop">
+<div class="backdrop is-open" data-modal>
 <div class="modal">
-  <button class="modal-close" type="button">
+  <button class="modal-close" type="button" data-modal-close>
     <svg class="modal-close-svg" width="8" height="8">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
@@ -532,6 +532,7 @@
 </div>
 
 </div>
-
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
